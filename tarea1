@@ -1,0 +1,21 @@
+class estudiante:
+    def __init__(self,nombre,creditos,puncalidad):
+        self.nombre=nombre
+        self.creditos=creditos
+        self.puncalidad=puncalidad
+    def promedio(self):
+        self.prom=(self.puncalidad/self.creditos) 
+        return self.prom
+    def mod(self):
+        self.creditos = self.creditos+2
+        self.puncalidad = self.puncalidad*2
+        self.prom=self.puncalidad/self.creditos
+        
+         
+
+
+estu = estudiante('Pablo',10,20)
+print(estu.promedio())
+estu.mod()
+print(estu.puncalidad)
+print(estu.promedio())
